@@ -26,7 +26,7 @@ __Trendy.brightness(r,g,b) -__ returns the W3C-specified brightness value of a c
 
 __Trendy.brighterThan(r,g,b,x) -__ returns true/false depending on whether color with rgb values r, g, b has a W3C-specified brightness val greater than x 
 
-__Trendy.bright(r,g,b)  __ returns true/false depending on whether color with rgb values r, g, b have a value brighter than 123 (out of 255)
+__Trendy.bright(r,g,b) -__ returns true/false depending on whether color with rgb values r, g, b have a value brighter than 123 (out of 255)
 
 
 ###misc
