@@ -10,8 +10,6 @@ Simply load jQuery.js (first), then Trendy.js in your preferred manner and the T
 
 __Trendy.getParam(z) —__ get URL parameter z
 
-__Trendy.comma(2000.00) -__ returns "2,000.00"
-
 __Trendy.underscore("A string with spaces") -__ returns "A_string_with_spaces" 
 
 __Trendy.space("A_string_without_spaces") -__ returns "A string without spaces" 
@@ -22,7 +20,7 @@ __Trendy.dollars(2000) -__ returns "$2,000"
 
 __Trendy.bigDollars(24000000.95) -__ returns "$24,000,000" (drops cents, because who cares?)
 
-__Trendy.getObjectWithKeyValue(object, key, value) - __ returns (first) object object with a matching key value or false 
+__Trendy.getObjectWithKeyValue(object, key, value) -__ returns (first) object object with a matching key value or false 
 
 __Trendy.brightness(r,g,b) -__ returns the W3C-specified brightness value of a color with given r, g, b values 
 
