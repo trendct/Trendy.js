@@ -10,9 +10,7 @@ Simply load jQuery.js (first), then Trendy.js in your preferred manner and the T
 
 **Trendy.getParam(z) — ** get URL parameter z
 
-**Trendy.getParam(z) — ** get URL parameter z
-
-**Trendy.underscore("A string with spaces") - ** returns "A_string_with_spaces" 
+**Trendy.underscore(A string with spaces) - ** returns "A_string_with_spaces" 
 
 **Trendy.space("A_string_without_spaces") - ** returns "A string without spaces" 
 
