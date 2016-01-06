@@ -6,7 +6,7 @@ handy functions for every project
 
 
 
-/* extend String ? Not sure why */
+/* TODO move toProperCase and toBoolean out of the string hack */
 String.prototype.toProperCase = function(txt) {
 
     return this.toString().replace(/\w\S*/g, function(txt) {
@@ -122,6 +122,22 @@ Trendy.getObjectWithKeyValue = function(object, key, value)
         return foundObject;
     }
     
+}
+
+// based on brightness formula here http://www.w3.org/TR/AERT#color-contrast
+// ((Red value X 299) + (Green value X 587) + (Blue value X 114)) / 1000
+Trendy.brightness = function(r, g, b){
+    return (r * 299 + g * 587 + g * 114) / 1000
+}
+
+// return true if r, g, b of color is brighter than x
+Trendy.brighterThan = function(r, g, b, x) {
+    return (this.brightness(r,g,b) > x);
+}
+
+// return true if r, g, b is "bright" by arbitrary definition
+Trendy.bright = function (r, g, b) {
+    return (this.brighterThan(123));
 }
 
 Handy = new Trendy();
