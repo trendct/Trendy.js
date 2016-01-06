@@ -10,6 +10,8 @@ Simply load jQuery.js (first), then Trendy.js in your preferred manner and the T
 
 __Trendy.getParam(z) —__ get URL parameter z
 
+__Trendy.comma(2000.00) - __ returns "2,000.00"
+
 __Trendy.underscore("A string with spaces") -__ returns "A_string_with_spaces" 
 
 __Trendy.space("A_string_without_spaces") -__ returns "A string without spaces" 
