@@ -137,7 +137,7 @@ Trendy.brighterThan = function(r, g, b, x) {
 
 // return true if r, g, b is "bright" by arbitrary definition
 Trendy.bright = function (r, g, b) {
-    return (this.brighterThan(123));
+    return (this.brighterThan(r, g, b, 123));
 }
 
 Handy = new Trendy();
