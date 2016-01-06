@@ -8,25 +8,25 @@ Simply load jQuery.js (first), then Trendy.js in your preferred manner and the T
 
 ###methods
 
-**Trendy.getParam(z) — ** get URL parameter z
+__Trendy.getParam(z) — __ get URL parameter z
 
-**Trendy.underscore(A string with spaces) - ** returns "A_string_with_spaces" 
+__Trendy.underscore("A string with spaces") - __ returns "A_string_with_spaces" 
 
-**Trendy.space("A_string_without_spaces") - ** returns "A string without spaces" 
+__Trendy.space("A_string_without_spaces") - __ returns "A string without spaces" 
 
-**Trendy.comma(2000.00) - ** returns "2,000.00"
+__Trendy.comma(2000.00) - __ returns "2,000.00"
 
-**Trendy.dollars(2000) - ** returns "$2,000"
+__Trendy.dollars(2000) - __ returns "$2,000"
 
-**Trendy.bigDollars(24000000.95) - ** returns "$24,000,000" (drops cents, because who cares?)
+__Trendy.bigDollars(24000000.95) - __ returns "$24,000,000" (drops cents, because who cares?)
 
-**Trendy.getObjectWithKeyValue(object, key, value) - ** returns (first) object object with a matching key value or false 
+__Trendy.getObjectWithKeyValue(object, key, value) - __ returns (first) object object with a matching key value or false 
 
-**Trendy.brightness(r,g,b) - ** returns the W3C-specified brightness value of a color with given r, g, b values 
+__Trendy.brightness(r,g,b) - __ returns the W3C-specified brightness value of a color with given r, g, b values 
 
-**Trendy.brighterThan(r,g,b,x) - ** returns true/false depending on whether color with rgb values r, g, b has a W3C-specified brightness val greater than x 
+__Trendy.brighterThan(r,g,b,x) - __ returns true/false depending on whether color with rgb values r, g, b has a W3C-specified brightness val greater than x 
 
-**Trendy.bright(r,g,b) - ** returns true/false depending on whether color with rgb values r, g, b have a value brighter than 123 (out of 255)
+__Trendy.bright(r,g,b) - __ returns true/false depending on whether color with rgb values r, g, b have a value brighter than 123 (out of 255)
 
 
 ###misc
