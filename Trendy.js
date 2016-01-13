@@ -127,7 +127,7 @@ Trendy.getObjectWithKeyValue = function(object, key, value)
 // based on brightness formula here http://www.w3.org/TR/AERT#color-contrast
 // ((Red value X 299) + (Green value X 587) + (Blue value X 114)) / 1000
 Trendy.brightness = function(r, g, b){
-    return (r * 299 + g * 587 + g * 114) / 1000
+    return (r * 299 + g * 587 + b * 114) / 1000
 }
 
 // return true if r, g, b of color is brighter than x
