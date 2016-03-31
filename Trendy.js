@@ -1,10 +1,9 @@
 /** trendy **
 
 handy functions for every project
+by Jake Kara / TrendCT.org
 
 **/
-
-
 
 /* TODO move toProperCase and toBoolean out of the string hack */
 String.prototype.toProperCase = function(txt) {
@@ -62,13 +61,24 @@ Trendy.space = function(string) {
 
 // add commas to whole or decimal number
 Trendy.comma = function (val) {
+    // make sure val is a string
+    val = val.toString();
 
-    // only works with .00 or 00 format. 
+    // do nothing on non-numeric values
+    if (isNaN(parseFloat(val))) {
+	console.error("Trendy.comma: Value is not numeric.");
+	return val;
+    }
+    // if there are more than two periods, it's not a valid number
+    var dec_count = (val.match(/\./g) || []).length; 
+    if (dec_count > 1) {
+		console.error("Trendy.comma: Value is not numeric (more than one decimal point: " + dec_count + ") ");
+	return val
+    }
 
     var valString = val.toString();
     var leftOfDecimal = null;
     var rightOfDecimal = null;
-
 
     // if decimal number, use recursion
     if (valString.indexOf(".") >= 0) {
@@ -93,6 +103,7 @@ Trendy.dollars = function(val) {
     return ("$" + this.comma(val));
 }
 
+// big meaning we don't care about the pennies.
 Trendy.bigDollars = function(val)
 {
     // lop off decimal
