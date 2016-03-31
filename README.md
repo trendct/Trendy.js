@@ -3,10 +3,10 @@ A handy JS library for interactive content
 
 Developed by TrendCT.org / Jake Kara (jkara@trendct.org)
 
-###use
+### use
 Load jQuery.js (first), then Trendy.js in your preferred manner and the Trendy variable is set. Call its methods to make your life easier.
 
-###methods
+### methods
 
 __Trendy.getParam(z) —__ get URL parameter z
 
@@ -28,6 +28,12 @@ __Trendy.brighterThan(r,g,b,x) -__ returns true/false depending on whether color
 
 __Trendy.bright(r,g,b) -__ returns true/false depending on whether color with rgb values r, g, b have a value brighter than 123 (out of 255)
 
+### files
 
-###misc
+Trendy.js -- the library
+test_trendy.js -- a bunch of test scripts
+tests.html -- a page that runs the test script and displays the output (in the DOM and the console)
+
+### misc
 handy.js is just the old file name, Trendy.js is a fork. 
+
