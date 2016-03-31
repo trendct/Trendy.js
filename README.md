@@ -1,7 +1,7 @@
 # Trendy.js
 A handy JS library for interactive content
 
-Developed by TrendCT.org / Jake Kara (jkara@trendct.org)
+Developed by TrendCT.org / Jake Kara (jkara@trendct.org) 
 
 ### use
 Load jQuery.js (first), then Trendy.js in your preferred manner and the Trendy variable is set. Call its methods to make your life easier.
