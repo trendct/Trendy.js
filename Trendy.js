@@ -15,7 +15,7 @@ String.prototype.toProperCase = function(txt) {
 
 /* Test if a string is 'true' or 'false' or unknown (-1)*/
 String.prototype.toBoolean = function () {
-    
+
     if (this.toString() === "true") {
         return true;
     }
@@ -27,12 +27,12 @@ String.prototype.toBoolean = function () {
     }
 }
 function Trendy(){
-    
+
     return this;
 }
 
 Trendy.getParam = function (param) {
-    
+
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
         sParameterName,
@@ -45,7 +45,7 @@ Trendy.getParam = function (param) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
         }
     };
-    
+
     return null;
 }
 
@@ -70,7 +70,7 @@ Trendy.comma = function (val) {
 	return val;
     }
     // if there are more than two periods, it's not a valid number
-    var dec_count = (val.match(/\./g) || []).length; 
+    var dec_count = (val.match(/\./g) || []).length;
     if (dec_count > 1) {
 		console.error("Trendy.comma: Value is not numeric (more than one decimal point: " + dec_count + ") ");
 	return val
@@ -97,9 +97,10 @@ Trendy.comma = function (val) {
 }
 
 // format for dollars
-Trendy.dollars = function(val) { 
+Trendy.dollars = function(val) {
 
-    // format        
+    val = val.toFixed(2);
+    // format
     return ("$" + this.comma(val));
 }
 
@@ -109,7 +110,7 @@ Trendy.bigDollars = function(val)
     // lop off decimal
     val = Math.round(parseFloat(val));
 
-    // format        
+    // format
     return ("$" + this.comma(val));
 
 }
@@ -132,7 +133,7 @@ Trendy.getObjectWithKeyValue = function(object, key, value)
     else {
         return foundObject;
     }
-    
+
 }
 
 // based on brightness formula here http://www.w3.org/TR/AERT#color-contrast
